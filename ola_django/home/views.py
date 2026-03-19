@@ -4,4 +4,5 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, "home/index.html")
+    context = {"title": "Pagina Principal "}
+    return render(request, "home/index.html", context)
