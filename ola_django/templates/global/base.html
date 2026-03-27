@@ -7,11 +7,12 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static "global/css/resete.css" %}">
         <link rel="stylesheet" href="{% static "global/css/style.css" %}">
         <title>{{ title }}- Ola DJANGO</title>
     </head>
     <body>
-        {% include "global/partials/menu.html" %}
+        {% include "global/partials/_menu.html" %}
         {% block body %}
         {% endblock body %}
     </body>

@@ -1,0 +1,24 @@
+/* Seleciona TODOS os elementos da página, além dos pseudo-elementos */
+*,
+*::before,
+*::after {
+  /* Zera todas as margens externas padrão */
+  margin: 0;
+
+  /* Zera todos os espaçamentos internos padrão */
+  padding: 0;
+
+  /* Muda a forma como o navegador calcula o tamanho das caixas */
+  box-sizing: border-box;
+}
+
+/* Remove o sublinhado padrão de todos os links */
+a {
+  text-decoration: none;
+}
+
+/* Remove as "bolinhas" padrão das listas */
+ul,
+ol {
+  list-style: none;
+}
