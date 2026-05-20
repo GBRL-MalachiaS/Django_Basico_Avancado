@@ -1,4 +1,6 @@
 {% extends "global/base.html" %}
 {% block body %}
-    <h1>Olá, eu sou a HOME do BLOG</h1>
+    {% for post in posts %}
+        {% include "global/partials/_postblock.html" %}
+    {% endfor %}
 {% endblock body %}

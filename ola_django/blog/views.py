@@ -1,10 +1,13 @@
 from django.shortcuts import render
 
+from . import data
+
 # Create your views here.
 
 
 def home(request):
-    context = {"title": "Blog Home "}
+
+    context = {"title": "Blog Home ", "posts": data.posts}
     return render(request, "blog/index.html", context)
 
 
