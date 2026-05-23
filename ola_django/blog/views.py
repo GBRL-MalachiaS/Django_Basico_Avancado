@@ -11,6 +11,18 @@ def home(request):
     return render(request, "blog/index.html", context)
 
 
+def post(request, id):
+    posts = data.posts
+    post = None
+    for post in posts:
+        if post["id"] == int(id):
+            post = post
+            break
+
+    context = {"title": "Post ", "post": post}
+    return render(request, "blog/exemplo.html", context)
+
+
 def exemplo(request):
     context = {"title": "Exemplo "}
     return render(request, "blog/exemplo.html", context)

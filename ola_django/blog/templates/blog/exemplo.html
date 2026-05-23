@@ -1,5 +1,6 @@
 {% extends "global/base.html" %}
-{% block body %}
-    <h1>Olá, Exemplo Blog</h1>
-    <br>
-{% endblock body %}
+<br>
+{% block main %}
+    {% if title %}<h1>{{ title }}</h1>{% endif %}
+    {% include "global/partials/_postblock.html" %}
+{% endblock main %}
