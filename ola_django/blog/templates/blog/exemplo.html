@@ -2,5 +2,7 @@
 <br>
 {% block main %}
     {% if title %}<h1>{{ title }}</h1>{% endif %}
-    {% include "global/partials/_postblock.html" %}
+    {% if post %}
+        {% include "global/partials/_postblock.html" %}
+    {% endif %}
 {% endblock main %}

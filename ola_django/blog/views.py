@@ -15,7 +15,7 @@ def post(request, id):
     posts = data.posts
     post = None
     for post in posts:
-        if post["id"] == int(id):
+        if post["id"] == id:
             post = post
             break
 
